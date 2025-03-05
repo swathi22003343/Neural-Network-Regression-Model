@@ -6,7 +6,7 @@ To develop a neural network regression model for the given dataset.
 
 ## THEORY
 
-Explain the problem statement
+The objective of this project is to develop a Neural Network Regression Model that can accurately predict a target variable based on input features. The model will leverage deep learning techniques to learn intricate patterns from the dataset and provide reliable predictions.
 
 ## Neural Network Model
 
@@ -89,8 +89,9 @@ def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=2000):
 
 
 ### New Sample Data Prediction
-![image](https://github.com/user-attachments/assets/060c6361-fdc2-443b-bf87-5b4da8c5795c)
-![image](https://github.com/user-attachments/assets/1bd7f4ad-6b47-4c20-bbb0-d4f2868d82c1)
+![Screenshot 2025-02-27 084707](https://github.com/user-attachments/assets/da08c827-084b-4b64-85be-ea4fb60af556)
+
+![Screenshot 2025-02-27 084725](https://github.com/user-attachments/assets/a75e6136-4c3b-43df-bd8c-ca92840789c0)
 
 
 
