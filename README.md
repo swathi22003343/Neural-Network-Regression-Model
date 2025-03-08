@@ -1,4 +1,4 @@
-# Developing a Neural Network Regression Model
+# EX 1 : Developing a Neural Network Regression Model
 
 ## AIM
 
@@ -10,7 +10,7 @@ The objective of this project is to develop a Neural Network Regression Model th
 
 ## Neural Network Model
 
-![Screenshot 2025-03-04 181856](https://github.com/user-attachments/assets/4c6136ef-3a0f-4bae-a795-eff4fe722424)
+![Screenshot 2025-02-27 085038](https://github.com/user-attachments/assets/8a23e8ff-cc3a-4c27-bd03-286d2c0c9d9e)
 
 
 ## DESIGN STEPS
@@ -44,15 +44,15 @@ Plot the performance plot
 Evaluate the model with the testing data.
 
 ## PROGRAM
-### Name:SWATHI D
-### Register Number:212222230154
+### Name: SWATHI D
+### Register Number: 212222230154
 ```python
 class NeuralNet(nn.Module):
   def __init__(self):
     super().__init__()
-    self.fc1 = nn.Linear(1, 12)
-    self.fc2 = nn.Linear(12, 10)
-    self.fc3 = nn.Linear(10, 1)
+    self.fc1 = nn.Linear(1, 4)
+    self.fc2 = nn.Linear(4, 6)
+    self.fc3 = nn.Linear(6, 1)
     self.relu = nn.ReLU()
     self.history = {'loss':[]}
   def forward(self,x):
@@ -75,17 +75,14 @@ def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=2000):
         ai_brain.history['loss'].append(loss.item())
         if epoch % 200 == 0:
             print(f'Epoch [{epoch}/{epochs}], Loss: {loss.item():.6f}')
-
 ```
 ## Dataset Information
-![image](https://github.com/user-attachments/assets/b43bbcc1-c7ab-4f35-b996-241db891e244)
-
+![Screenshot 2025-02-27 084550](https://github.com/user-attachments/assets/57977aa3-ad27-4bf4-afc5-fc89d3f1ad1e)
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
-
-![image](https://github.com/user-attachments/assets/9f119cc2-b23a-4f6e-8429-1de4efa642e0)
+![Screenshot 2025-02-27 084633](https://github.com/user-attachments/assets/dbb0e281-d351-492d-b5d4-0e517a4d57cb)
 
 
 ### New Sample Data Prediction
@@ -93,8 +90,5 @@ def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=2000):
 
 ![Screenshot 2025-02-27 084725](https://github.com/user-attachments/assets/a75e6136-4c3b-43df-bd8c-ca92840789c0)
 
-
-
 ## RESULT
-
 The neural network regression model was successfully trained and evaluated. The model demonstrated strong predictive performance on unseen data, with a low error rate.
